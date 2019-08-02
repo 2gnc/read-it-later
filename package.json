@@ -11,6 +11,7 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "pretty-quick --staged",
+      "echo 123",
       "client/node_modules/eslint/bin/eslint.js client/src/**/*.js || true && client/node_modules/eslint/bin/eslint.js server/**/*.js || true",
       "git add"
     ]
