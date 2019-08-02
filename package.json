@@ -11,12 +11,11 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "pretty-quick --staged",
-      "eslint client/src/ --fix",
+      "client/node_modules/eslint/bin/eslint.js client/src/**/*.js || true && client/node_modules/eslint/bin/eslint.js server/**/*.js || true",
       "git add"
     ]
   },
   "scripts": {
-    "lint": "client/node_modules/eslint/bin/eslint.js client/src/**/*.js || true && client/node_modules/eslint/bin/eslint.js server/**/*.js || true",
     "start": " cd ./client && yarn start"
   }
 }
