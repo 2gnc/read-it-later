@@ -16,7 +16,8 @@
     "lint-client": "client/node_modules/eslint/bin/eslint.js client/src/**/*.js --fix",
     "lint-server": "client/node_modules/eslint/bin/eslint.js server/**/*.js --fix",
     "prettify": "node_modules/prettier/bin-prettier.js --config .prettierrc --write client/src/**/*.js",
-    "start": " cd ./client && yarn start"
+    "start": " cd ./client && yarn start",
+    "start-db": "cd ~ && ./mongodb/bin/mongod --dbpath=/Users/tgnc/learn/read-it-later/db --port 27018"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^17.1.1",
