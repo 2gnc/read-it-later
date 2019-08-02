@@ -1,17 +1,10 @@
 {
     "extends": ["airbnb", "prettier", "prettier/react"],
-    "plugins": ["prettier"],
+    "plugins": ["prettier", "react"],
     "rules": {
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [".js", ".jsx"]
-            }
-        ],
-        "react/prop-types": 0,
-        "no-underscore-dangle": 0,
-        "import/imports-first": ["error", "absolute-first"],
-        "import/newline-after-import": "error"
+        "indent": ["error", 4],
+        "react/destructuring-assignment": 1,
+        "react/jsx-filename-extension": 1
     },
     "globals": {
         "window": true,
@@ -20,7 +13,8 @@
         "FormData": true,
         "FileReader": true,
         "Blob": true,
-        "navigator": true
+        "navigator": true,
+        "fetch": true
     },
     "parser": "babel-eslint"
 }

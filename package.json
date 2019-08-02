@@ -9,11 +9,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint || false"
+      "pre-commit": "yarn prettify && yarn lint-client && yarn lint-server"
     }
   },
   "scripts": {
-    "lint": "client/node_modules/eslint/bin/eslint.js client/src/**/*.js || true && client/node_modules/eslint/bin/eslint.js server/**/*.js || true",
+    "lint-client": "client/node_modules/eslint/bin/eslint.js client/src/**/*.js --fix",
+    "lint-server": "client/node_modules/eslint/bin/eslint.js server/**/*.js --fix",
+    "prettify": "node_modules/prettier/bin-prettier.js --config .prettierrc --write client/src/**/*.js",
     "start": " cd ./client && yarn start"
   },
   "devDependencies": {
@@ -23,6 +25,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
-    "husky": "^3.0.2"
+    "husky": "^3.0.2",
+    "prettier": "^1.18.2"
   }
 }
