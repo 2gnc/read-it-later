@@ -8,6 +8,7 @@ state = {
   };
 
   componentDidMount() {
+    const test;
       // Call our fetch function below once the component mounts
     this.callBackendAPI()
       .then(res => this.setState({ data: res.express }))
