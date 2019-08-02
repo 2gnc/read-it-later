@@ -5,7 +5,7 @@ mongoose.connect('mongodb://127.0.0.1:27018/read-it-later', {
     useCreateIndex: true,
     useFindAndModify: false
 }).then(() => {
-    console.info('Mongo connected - ok');
+console.info('Mongo connected - ok');
 }).catch((e) => {
-    console.error('Mongo connection error: ', e);
+console.error('Mongo connection error: ', e);
 });
