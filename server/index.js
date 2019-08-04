@@ -1,4 +1,7 @@
-require('./database/mongoose');
+const config = require('./utils/config');
+
+require('./database/index');
+
 const express = require('express');
 
 const app = express();
