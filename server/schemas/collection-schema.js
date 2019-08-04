@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
 const collectionSchema = new Schema({
     _id: Schema.Types.ObjectId,
@@ -8,10 +8,10 @@ const collectionSchema = new Schema({
     description: String,
     author: {
         type: Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'User',
     },
     isPrivate: Boolean,
-    records: [{ type: Schema.Types.ObjectId, ref: 'Record' }]
+    records: [{type: Schema.Types.ObjectId, ref: 'Record'}],
 });
 
 const CollectionModel = mongoose.model('Collection', collectionSchema);
