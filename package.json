@@ -18,7 +18,7 @@
     "lint-server": "client/node_modules/eslint/bin/eslint.js server/**/*.js --fix",
     "prettify": "node_modules/prettier/bin-prettier.js --config .prettierrc --write client/src/**/*.js && node_modules/prettier/bin-prettier.js --config .prettierrc --write server/**/*.js",
     "start-app": " cd ./client && yarn start",
-    "start-server": "node_modules/nodemon/bin/nodemon.js server/index.js",
+    "start-server": "node_modules/nodemon/bin/nodemon.js server/app.js",
     "start-db": "cd ~ && ./mongodb/bin/mongod --dbpath=/Users/tgnc/learn/read-it-later/db --port 27018"
   },
   "devDependencies": {

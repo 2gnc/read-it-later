@@ -11,7 +11,7 @@ const collectionSchema = new Schema({
         ref: 'User',
     },
     isPrivate: Boolean,
-    records: [{type: Schema.Types.ObjectId, ref: 'Record'}],
+    records: [{ type: Schema.Types.ObjectId, ref: 'Record' }],
 });
 
 const CollectionModel = mongoose.model('Collection', collectionSchema);
