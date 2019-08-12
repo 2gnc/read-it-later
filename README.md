@@ -1,6 +1,9 @@
-# Разработка
+# Read it later
 [![Build Status](https://travis-ci.org/2gnc/read-it-later.svg?branch=master)](https://travis-ci.org/2gnc/read-it-later)
 
+Приложение для сохранения и управления ссылками на полезные материалы.
+
+## Разработка
 Для нормальной работы проекта нужен `node 10+`.
 
 В разных вкладках в оболочке `bash`:
