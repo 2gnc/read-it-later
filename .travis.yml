@@ -2,7 +2,8 @@ language: node_js
 node_js: 10
 install:
   - npm install
-  # - cd ./client && npm install
+  - echo ls
+  - cd ./client && npm install
 script: yarn test
 after_script: cd ..
 deploy:
