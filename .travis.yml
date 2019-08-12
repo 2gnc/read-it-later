@@ -2,13 +2,13 @@ language: node_js
 node_js: 10
 install:
   - npm install
-  - cd ./client && npm install
+  # - cd ./client && npm install
 script: yarn test
+after_script: cd ..
 deploy:
   provider: heroku
   app: read-it-later-testing
   run:
-    - cd ..
     - "npm install"
     - "cd ./client && npm install"
     - "npm run build"
