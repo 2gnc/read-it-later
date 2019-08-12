@@ -1,5 +1,6 @@
 # Разработка
 [![Build Status](https://travis-ci.org/2gnc/read-it-later.svg?branch=master)](https://travis-ci.org/2gnc/read-it-later)
+
 Для нормальной работы проекта нужен `node 10+`.
 
 В разных вкладках в оболочке `bash`:
