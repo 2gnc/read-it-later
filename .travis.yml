@@ -3,12 +3,12 @@ node_js: 10
 install:
   - npm install
   - cd ./client && npm install
-  - cd ..
 script: yarn test
 deploy:
   provider: heroku
   app: read-it-later-testing
   run:
+    # - cd ..
     # - "npm install"
     # - "cd ./client && npm install"
     - "npm run build"
