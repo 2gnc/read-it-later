@@ -4,8 +4,7 @@ install:
   - npm install
   - echo ls
   - cd ./client && npm install
-script: yarn test
-after_script: cd ..
+script: yarn test && cd ..
 deploy:
   provider: heroku
   app: read-it-later-testing
