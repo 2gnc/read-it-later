@@ -8,9 +8,9 @@ deploy:
   provider: heroku
   app: read-it-later-testing
   run:
-    # - cd ..
-    # - "npm install"
-    # - "cd ./client && npm install"
+    - cd ..
+    - "npm install"
+    - "cd ./client && npm install"
     - "npm run build"
     - "echo 123"
     - "cd ../server && npm run start-server"
