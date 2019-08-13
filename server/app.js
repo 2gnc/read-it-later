@@ -12,7 +12,7 @@ const app = express()
     .use(express.json())
     .use(userData)
     .get('*', (req, res) => {
-        return res.sendFile(`${publicPath}/index.html`)
+        return res.sendFile(`client/build/index.html`)
     });
 
 const port = process.env.PORT || 5000;
