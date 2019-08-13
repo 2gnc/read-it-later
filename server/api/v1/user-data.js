@@ -1,4 +1,5 @@
 const express = require('express');
+
 const userApi = new express.Router();
 
 userApi.get('/v1/user_data', async (req, res, next)  => {

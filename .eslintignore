@@ -1,3 +1,4 @@
 node_modules
+middlewares
 client/src/serviceWorker.js
 client/src/**/*.test.js

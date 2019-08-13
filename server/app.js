@@ -1,10 +1,11 @@
-const config = require('./utils/config');
 const path = require('path')
+const express = require('express');
+// const config = require('./utils/config');
 const userData = require('./api/v1/user-data');
 
 require('./database/index');
 
-const express = require('express');
+
 const publicPath = path.join(__dirname, '../client/build');
 
 const app = express()
