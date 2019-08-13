@@ -16,5 +16,5 @@ const app = express()
     });
 
 const port = process.env.PORT || 5000;
-console.debug(`yaii !!! ${port} ${publicPath}/index.html`);
+console.debug(`yaii !! ${port} ${publicPath}/index.html`);
 app.listen(port, () => console.log(`Listening on port ${port}`));
