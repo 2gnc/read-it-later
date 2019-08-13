@@ -14,16 +14,17 @@
     }
   },
   "scripts": {
+    "install-deps": "npm install && cd client && npm install && cd ../server && npm install",
     "lint-client": "client/node_modules/eslint/bin/eslint.js client --fix",
     "lint-server": "client/node_modules/eslint/bin/eslint.js server --fix",
     "prettify": "node_modules/prettier/bin-prettier.js --config .prettierrc --write client/src/**/*.js && node_modules/prettier/bin-prettier.js --config .prettierrc --write server/**/*.js",
     "start-app": " cd ./client && yarn start",
     "start-server": "node_modules/nodemon/bin/nodemon.js server/app.js",
     "start-db": "cd ~ && ./mongodb/bin/mongod --dbpath=/Users/tgnc/learn/read-it-later/db --port 27018",
-    "test": "cd ./client && yarn test -a"
+    "test": "cd ./client && yarn test"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
+    "babel-eslint": "10.0.1",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
