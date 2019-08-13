@@ -16,6 +16,6 @@ const app = express()
     });
 
 const port = process.env.PORT || 5000;
-console.debug(`__dirname ${__dirname}`);
+console.debug(`__dirname: ${__dirname}`);
 console.debug('clientPath', clientPath);
 app.listen(port, () => console.log(`Listening on port ${port}`));
