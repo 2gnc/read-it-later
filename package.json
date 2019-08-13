@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "install-deps": "yarn install && cd client && yarn install && yarn build && cd ../server && yarn install",
+    "install-deps": "yarn install && cd client && yarn install && cd ../server && yarn install",
     "lint-client": "client/node_modules/eslint/bin/eslint.js client --fix",
     "lint-server": "client/node_modules/eslint/bin/eslint.js server --fix",
     "prettify": "node_modules/prettier/bin-prettier.js --config .prettierrc --write client/src/**/*.js && node_modules/prettier/bin-prettier.js --config .prettierrc --write server/**/*.js",
