@@ -22,7 +22,8 @@
     "start-server": "node_modules/nodemon/bin/nodemon.js server/app.js",
     "start-db": "cd ~ && ./mongodb/bin/mongod --dbpath=/Users/tgnc/learn/read-it-later/db --port 27018",
     "test": "cd ./client && yarn test",
-    "start": "npm run install-deps && node server/app.js"
+    "start": "npm run install-deps && node server/app.js",
+    "build": "cd client && yarn build"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
