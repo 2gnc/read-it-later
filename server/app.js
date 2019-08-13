@@ -6,15 +6,15 @@ const userData = require('./api/v1/user-data');
 require('./database/index');
 
 
-const publicPath = path.join(__dirname, '../client/build');
+const publicPath = path.join(__dirname, '/../client/build');
 
 const app = express()
     .use(express.json())
     .use(userData)
     .get('/', (req, res) => {
-        return res.sendFile(path.join(publicPath, 'index.html'))
+        return res.sendFile(`${publicPath}/index.html`)
     });
 
 const port = process.env.PORT || 5000;
-
+console.debug(`${publicPath}/index.html`);
 app.listen(port, () => console.log(`Listening on port ${port}`));
