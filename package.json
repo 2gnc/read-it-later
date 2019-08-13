@@ -15,6 +15,7 @@
   },
   "scripts": {
     "install-deps": "yarn install && cd client && yarn install && cd ../server && yarn install",
+    "client-build": "cd client && yarn build && cd ..",
     "lint-client": "client/node_modules/eslint/bin/eslint.js client --fix",
     "lint-server": "client/node_modules/eslint/bin/eslint.js server --fix",
     "prettify": "node_modules/prettier/bin-prettier.js --config .prettierrc --write client/src/**/*.js && node_modules/prettier/bin-prettier.js --config .prettierrc --write server/**/*.js",
@@ -22,7 +23,7 @@
     "start-server": "node_modules/nodemon/bin/nodemon.js server/app.js",
     "start-db": "cd ~ && ./mongodb/bin/mongod --dbpath=/Users/tgnc/learn/read-it-later/db --port 27018",
     "test": "cd ./client && yarn test",
-    "start": "npm run install-deps && node server/app.js"
+    "start": "npm run install-deps && client-build && node server/app.js"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
