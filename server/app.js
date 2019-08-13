@@ -6,12 +6,12 @@ const userData = require('./api/v1/user-data');
 require('./database/index');
 
 
-const publicPath = path.join(__dirname, '/client/build');
+const publicPath = path.join(__dirname, './client/build');
 
 const app = express()
     .use(express.json())
     .use(userData)
-    .get('/', (req, res) => {
+    .get('*', (req, res) => {
         return res.sendFile(`${publicPath}/index.html`)
     });
 
